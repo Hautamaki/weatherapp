@@ -2,8 +2,9 @@ const api_url = "http://api.weatherapi.com/v1/current.json?key=";
 const api_key = "082903d1d3604946acc100812233103";
 const api_location = "&q=Espoo";
 const api_aqi = "&aqi=no";
+const lang = "&lang_name=Finnish";
 
-const full_api = api_url + api_key + api_location + api_aqi;
+const full_api = api_url + api_key + api_location + api_aqi + lang;
 
 async function getapi(url) {
     const response = await fetch(url);
@@ -23,6 +24,8 @@ function show(data) {
     // Shows the fetched data on html
     document.getElementById("location").innerHTML = data.location.name + ", " + data.location.country;
     document.getElementById("temperature").innerHTML = data.current.feelslike_c;
+    document.getElementById("text").innerHTML = data.current.condition.text;
+
 
     // Gets the data for the current weather icon
     // If you want to use own icons (or just local) for the app, put them inside /cdn.weatherapp.com/weather/64x64/[day or night]/[filename ex. 116.png]
