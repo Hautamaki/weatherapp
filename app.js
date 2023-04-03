@@ -2,7 +2,7 @@ const api_url = "http://api.weatherapi.com/v1/current.json?key=";
 const api_key = "082903d1d3604946acc100812233103";
 const api_location = "&q=Espoo";
 const api_aqi = "&aqi=no";
-const lang = "&lang_name=Finnish";
+const lang = "&lang=fi";
 
 const full_api = api_url + api_key + api_location + api_aqi + lang;
 
