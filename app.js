@@ -23,7 +23,7 @@ getapi(full_api);
 function show(data) {
     // Shows the fetched data on html
     document.getElementById("location").innerHTML = data.location.name + ", " + data.location.country;
-    document.getElementById("temperature").innerHTML = data.current.feelslike_c;
+    document.getElementById("temperature").innerHTML = data.current.temp_c;
     document.getElementById("text").innerHTML = data.current.condition.text;
 
 
