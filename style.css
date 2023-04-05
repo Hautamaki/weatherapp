@@ -1,6 +1,9 @@
 html {
     height: 100%;
 }
+p {
+    margin: 0;
+}
 
 header {
     background-color: white;
@@ -19,21 +22,37 @@ body {
     background-image: url("https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bGlmZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
 }
 
-.weather-data-wrapper > *{
-    display: inline;
+.weather-data-wrapper {
+    background-color: white;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	/*justify-content: center;*/
+	align-items: stretch;
+	align-content: stretch;
 }
-.text-for-background > *{
-    display: inline;
+.text-for-background {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
 }
 
-#weatherIcon {
+#weaherIcon {
+
+}
+#temperature {
+    font-weight: bold;
+    font-size: 30px;
     margin-top: 10px;
 }
 
 #footer {
-    background-color: white;
+   
     margin: 0;
-    padding: 20px;
     text-align: center;
 
     position:fixed;
@@ -41,6 +60,14 @@ body {
     height:auto;
     margin-top:40px;
     width:100%;
+}
+#credits {
+    padding-bottom: 30px;
+}
+#credits a, #credits {
+    background-color: white;
+    color: lightgray;
+    padding-top: 30px;
 }
 span {
     font-weight: bold;
