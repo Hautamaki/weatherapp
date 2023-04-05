@@ -63,12 +63,22 @@ body {
 }
 #credits {
     padding-bottom: 30px;
+    padding-top: 30px;
+}
+#credits p {
+    padding-bottom: 5px;
 }
 #credits a, #credits {
     background-color: white;
     color: lightgray;
-    padding-top: 30px;
+
 }
 span {
     font-weight: bold;
+}
+
+.round-btn {
+    padding: 20px 10px 20px 10px;
+    background-color: bisque;
+    border-radius: 100px;
 }
