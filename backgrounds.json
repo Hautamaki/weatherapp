@@ -1,14 +1,16 @@
 [
     {
-        "code":1000,
-        "videocliplink":"/videos/niilosyomassa.mp4",
-        "videolink":"https://youtube.com",
-        "videoname":"Niilon rauhanajan retki"
+        "1000": {
+            "videocliplink":"/videos/niilosyomassa.mp4",
+            "videolink":"https://youtube.com",
+            "videoname":"Niilon rauhanajan retki"
+        }
     },
     {
-        "code":1003,
-        "videocliplink":"/videos/niilosyomassa.mp4",
-        "videolink":"https://youtube.com",
-        "videoname":"Niilon rauhanajan retki"
+        "1003": {
+            "videocliplink":"/videos/niilosyomassa.mp4",
+            "videolink":"https://youtube.com",
+            "videoname":"Niilon rauhanajan retki"
+        }
     }
 ]
