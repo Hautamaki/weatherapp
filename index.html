@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sää22</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
@@ -19,6 +20,7 @@
 </body>
 
 <div id="footer">
+
 
     <div class="text-for-background">
         <p>ytlogo Niilo22 - ytvideon nimi</p>
@@ -39,3 +41,10 @@
     </div>
 </div>
 </html>
+
+<script>
+      $.getJSON('https://favicongrabber.com/api/grab/youtube.com', function(faviconData) {
+        favicon = faviconData[icons][src];
+        console.log(favicon);
+      });
+</script>
